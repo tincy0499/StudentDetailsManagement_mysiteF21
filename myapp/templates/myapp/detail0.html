@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>E-Learning WebApp! - Detail</title>
+</head>
+<body>
+
+<p><b>Topic : </b>{{ topic.name|upper }}</p>
+<p><b>Lenght : </b>{{ topic.length }}</p>
+{% if courses %}
+    <p><b>List of Courses:</b></p>
+    <ul>
+        {% for course in courses %}
+            <li><p>{{ course.title}}</p></li>
+        {% endfor %}
+    </ul>
+{% endif %}
+<p>Hardcoded : <a href="/myapp/">Home page</a> </p>
+<p>URL Namespacing : <a href="{% url 'myapp:index' %}">Home page</a></p>
+</body>
+</html>

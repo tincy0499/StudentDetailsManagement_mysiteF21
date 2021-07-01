@@ -1,0 +1,10 @@
+.hbar1 {
+    display: inline;
+    margin: 15px;
+    font-min-size: 12px;
+    background-color: dimgray;
+    color: crimson;
+    font-style: italic;
+    alignment: center;
+
+}
